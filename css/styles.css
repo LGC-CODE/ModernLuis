@@ -73,6 +73,46 @@ html, body {
 body {
     margin: 0;
     font-family: 'Nunito', sans-serif;
+    color: #fff;
+    background: url('../img/batthern.png');
+    background-color: black;
+}
+
+div h1 a {
+    color: white;
+}
+
+.carousel {
+    height: 160px;
+}
+
+.row.nav-wrapper {
+    position: absolute;
+    width: 100%;
+    padding: 2%;
+    z-index: 1;
+}
+
+#features {
+    width: 100%;
+    min-height: 834px;
+    position: relative;
+    background: url('http://www.pptbackgrounds.org/uploads/abstract-yellow-with-black-and-some-green-on-the-left-backgrounds-wallpapers.jpg') fixed center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wp2 {
+    margin-top: 90px;
+}
+
+.wp2 p {
+    margin: 0;
+    color: white;
+}
+
+.wp2 h1 {
+    margin: 0;
 }
 
 /*
@@ -449,10 +489,10 @@ p {
     line-height: 25px;
 }
 a {
-    color: #73d0da
+    color: #fff;
 }
 a:hover, a:focus {
-    color: #73d0da;
+    color: #7b7b7b;
     text-decoration: none;
 }
 .texture-overlay {
@@ -472,12 +512,12 @@ Buttons
     margin: 0 10px 10px 0;
     padding: 20px 50px;
     border-radius: 3px;
-    background-color: #fff;
-    color: #4b98a9;
+    background-color: #ababab;
+    color: #000;
     font-size: 16px;
 }
 .use-btn:hover, .use-btn:focus {
-    background-color: #73d0da;
+    background-color: #383838;
     color: #fff;
     text-decoration: none;
 }
@@ -490,8 +530,8 @@ Buttons
     font-size: 16px;
 }
 .learn-btn:hover, .download-btn:hover, .learn-btn:focus, .download-btn:focus {
-    border-color: #73d0da;
-    color: #73d0da;
+    border-color: #565656;
+    color: #565656;
     text-decoration: none;
 }
 .read-more-btn {
@@ -581,12 +621,12 @@ Hero
     position: relative;
     padding: 60px 0 60px 0;
     min-height: 800px;
-    background: rgb(40, 70, 102) url('../img/hero-01.jpg') no-repeat center center;
+    background: rgb(40, 70, 102) url('http://download.pchome.net/wallpaper/pic-2294-2.jpg') no-repeat center center;
     background-size: cover;
     color: #fff;
 }
 .hero h1 {
-    margin: 200px 0 45px 0;
+    margin: 200px 0 0 0;
     font-weight: 300;
     font-size: 45px;
 }
@@ -658,7 +698,7 @@ Features Slider
 .features-bg {
     position: relative;
     min-height: 400px;
-    background: url('../img/features-intro-01.jpg') no-repeat center center;
+    background: url('http://download.pchome.net/wallpaper/pic-2294-2.jpg') no-repeat center center;
     background-size: cover;
 }
 .features-img {
@@ -669,9 +709,9 @@ Features Slider
 }
 .features-slider {
     position: relative;
-    padding: 11% 100px 10% 100px;
+    padding: 7% 100px 10% 100px;
     height: 400px;
-    background-color: #3F6184;
+    background-color: black;
 }
 .features-slider ul {
     margin: 0;
@@ -707,6 +747,16 @@ Features Slider
     margin: 0 12px 0 0;
 }
 
+.overlay-bg {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/batthern.png);
+    background-color: rgba(147, 147, 147, 0.37);
+}
+
 /* ==========================================================================
 Features List
 ========================================================================== */
@@ -716,12 +766,12 @@ Features List
 .features-list h1 {
     margin: 0 0 10px 0;
     padding: 0;
-    color: #24374b;
+    color: #f88e1a;
     font-size: 20px;
 }
 .features-list p {
-    margin-bottom: 20px;
-    color: #778899;
+    margin-bottom: 0px;
+    color: white;
 }
 .feature-content {
     display: inline-block;
@@ -776,8 +826,11 @@ blockquote .logo-quote {
 Showcase
 ========================================================================== */
 .showcase {
-    background: url('../img/showcase-bg-fixed-01.jpg') no-repeat center center fixed;
+    background: url('http://download.pchome.net/wallpaper/pic-2294-2.jpg') no-repeat center center fixed;
     background-size: cover;
+    min-height: 778px;
+    /* height: 100%; */
+    padding: 0%;
 }
 .showcase h1 {
     margin: 0 0 20px 0;
@@ -824,8 +877,17 @@ Showcase
 }
 
 /* ==========================================================================
+Logo
+========================================================================== */
+
+.img-adjust {
+    margin: 14% 54%;
+}
+
+/* ==========================================================================
 Screenshots Intro
 ========================================================================== */
+
 .screenshots-intro {
     padding: 170px 0 100px 0;
     background-color: #f6f7f9;
@@ -979,7 +1041,7 @@ Nav Overlay
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(52, 82, 113, 0.95);
+    background: rgba(59, 16, 16, 0.9);
 }
 
 /* Menu style */
@@ -1019,7 +1081,7 @@ Nav Overlay
     min-width: 190px;
     border: 2px solid #fff;
     border-radius: 3px;
-    background-color: #345271;
+    background-color: RGBA(0, 0, 0, 0.54);
     color: #fff;
     text-transform: uppercase;
     font-weight: 400;
@@ -1044,6 +1106,7 @@ Nav Overlay
     opacity: 1;
     -webkit-transition: opacity 0.5s;
     transition: opacity 0.5s;
+    z-index: 1;
 }
 .overlay-boxify nav ul li {
     opacity: 0;

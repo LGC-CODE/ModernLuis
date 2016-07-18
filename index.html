@@ -8,10 +8,10 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Boxify: Free HTML5/CSS3 Template by Peter Finlan</title>
-		<meta name="description" content="A free HTML5/CSS3 template made exclusively for Codrops by Peter Finlan" />
-		<meta name="keywords" content="html5 template, css3, one page, animations, agency, portfolio, web design" />
-		<meta name="author" content="Peter Finlan" />
+		<title>Web Development by Luis Constante</title>
+		<meta name="description" content="A Personal Portfolio Website" />
+		<meta name="keywords" content="Web Development, web, cheap, affordable, modern, elegant, development, jquery, bootstrap, nodejs, angularjs, javascript, bay area, bay, area, oakland, san leandro, paginas, web, baratas, economicas, dolares, database, base, datos, luis, constante, lgc, code" />
+		<meta name="author" content="Luis Constante" />
 		<!-- Bootstrap -->
 		<script src="js/modernizr.custom.js"></script>
 		<link href="css/bootstrap.min.css" rel="stylesheet">
@@ -39,140 +39,156 @@
 		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 		<![endif]-->
 	</head>
-	<body>
+	<body ng-app="myApp">
 		<!--[if lt IE 7]>
 		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 		<![endif]-->
 		<!-- open/close -->
+	<div ng-controller="navCtrl">
+		<div class="row nav-wrapper">
+			<div class="col-md-6 col-sm-6 col-xs-6 text-left">
+				<a href="https://github.com/LGC-CODE">Github</a>
+			</div>
+			<div ng-click="navToggle()" class="col-md-6 col-sm-6 col-xs-6 text-right navicon">
+				<p>MENU</p><a id="trigger-overlay" class="nav_slide_button nav-toggle"><span></span></a>
+			</div>
+		</div>
+		<div class="overlay overlay-boxify">
+			<nav ng-click="navToggle()">
+				<ul>
+					<li><a href="#/slider"><i class="fa fa-globe"></i>About</a></li>
+					<li><a href="#/packs"><i class="fa fa-barcode"></i>Products</a></li>
+				</ul>
+				<ul>
+					<li><a href="#/info"><i class="fa fa-exclamation-circle"></i>I'm Not Sure</a></li>
+					<li><a href="#/pictures"><i class="fa fa-picture-o"></i>Contact</a></li>
+					<li><a href="#/home"><i class="fa fa-home"></i>Home</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+		<ui-view></ui-view>
+	<script type="text/ng-template" id="/home.html">
 		<header>
 			<section class="hero">
 				<div class="texture-overlay"></div>
 				<div class="container">
-					<div class="row nav-wrapper">
-						<div class="col-md-6 col-sm-6 col-xs-6 text-left">
-							<a href="#"><img src="img/logo-white.png" alt="Boxify Logo"></a>
-						</div>
-						<div class="col-md-6 col-sm-6 col-xs-6 text-right navicon">
-							<p>MENU</p><a id="trigger-overlay" class="nav_slide_button nav-toggle" href="#"><span></span></a>
-						</div>
-					</div>
 					<div class="row hero-content">
-						<div class="col-md-12">
-							<h1 class="animated fadeInDown">An Exclusive, Premium HTML5 &amp; CSS3 Template by Peter Finlan, for Codrops.</h1>
-							<a href="http://tympanus.net/codrops/?p=22554" class="use-btn animated fadeInUp">Use it for free</a> <a href="#about" class="learn-btn animated fadeInUp">Learn more <i class="fa fa-arrow-down"></i></a>
+						<div class="col-md-6">
+							<h1 class="animated fadeInDown">Luis Constante</h1>
+							<h3>Always Striving For Excellence</h3>
+							<a href="http://tympanus.net/codrops/?p=22554" class="use-btn animated fadeInUp">View Packs</a> <a href="#moreInfo" class="learn-btn animated fadeInUp">Learn More<i class="fa fa-arrow-down"></i></a>
+						</div>
+						<div class="col-md-6 col-lg-6 visible-md visible-lg">
+							<img class="img-adjust animated fadeIn" width="50%" src="img/lgc-logo.png">
 						</div>
 					</div>
 				</div>
 			</section>
 		</header>
-		<section class="video" id="about">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 text-center">
-						<h1><a href="http://www.youtube.com/embed/9No-FiEInLA?autoplay=1&wmode=opaque&fs=1" class="youtube-media"><i class="fa fa-play-circle-o"></i> Watch the Video</a></h1>
-					</div>
-				</div>
-			</div>
-		</section>
+	</script>
+	<script type="text/ng-template" id="/slider.html">
 		<section class="features-intro">
-			<div class="container-fluid">
+			<div ng-init="fxLogo()" class="container-fluid">
 				<div class="row">
-					<div class="col-md-6 nopadding features-intro-img">
+					<div class="col-md-12 nopadding features-intro-img">
 						<div class="features-bg">
 							<div class="texture-overlay"></div>
 							<div class="features-img wp1">
-								<img src="img/html5-logo.png" alt="HTML5 Logo">
+								<img src="img/lgc-logo.png" alt="luis Logo">
 							</div>
 						</div>
 					</div>
-					<div class="col-md-6 nopadding">
-						<div class="features-slider">
-								<ul class="slides" id="featuresSlider">
-									<li>
-										<h1>The Fore-front of Design &amp; Technology</h1>
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-										<p><a href="#features" class="arrow-btn">Find out why this freebie rocks! <i class="fa fa-long-arrow-right"></i></a></p>
-									</li>
-									<li>
-										<h1>Multi-Purpose User Centric Design</h1>
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-										<p><a href="http://tympanus.net/codrops/?p=22554" class="arrow-btn">Find out why this freebie rocks! <i class="fa fa-long-arrow-right"></i></a></p>
-									</li>
-									<li>
-										<h1>Made with Love, Released for Free</h1>
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-										<p><a href="http://tympanus.net/codrops/?p=22554" class="arrow-btn">Find out why this freebie rocks! <i class="fa fa-long-arrow-right"></i></a></p>
-									</li>
-								</ul>
+					<div class="col-md-12 nopadding" id="moreInfo">
+						<div class="info-wrap">
+							<div class="features-slider">
+									<ul class="slides" id="featuresSlider">
+										<li>
+											<h1>Professional Front-End Development</h1>
+											<p>Working with the best technologies to bring you the highest quality finish. Any website made by us contains the necessary accessories needed to attract the best customers!</p>
+											<p><a href="#features" class="arrow-btn">Features ►</a></p>
+										</li>
+										<li>
+											<h1>Inexpensive Services</h1>
+											<p>Many Web Designers/Developers charge a ton of money for their services. Including custom layouts and Photoshop to HTML conversions. Here, we offer you products that are productive to your needs at a low rate! </p>
+											<p><a href="#features" class="arrow-btn">Features ►</a></p>
+										</li>
+										<li>
+											<h1>Web Page Maintenance</h1>
+											<p>Do you have a WordPress Website or simply need to update information on your website? We Can Help! We can give you the best price for maintaining your website!</p>
+											<p><a href="mailto:design@luisconstante.com?subject=lgc%20message" class="arrow-btn">Email Us!</a></p>
+										</li>
+									</ul>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="features-list" id="features">
+	</script>
+	<script type="text/ng-template" id="/packs.html">
+		<section ng-init="loadPacks()" class="features-list" id="features">
+		<div class="overlay-bg"></div>
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
+						<h1>Our Pack Selection</h1>
+					</div>
+					<div class="col-md-12">
 
-						<div class="col-md-4 feature-1 wp2">
-							<div class="feature-icon">
-								<i class="fa fa-desktop"></i>
-							</div>
-							<div class="feature-content">
-								<h1>Responsive</h1>
-								<p>Built using HTML5/CSS3 and jQuery, and built using one of the world's most powerful CSS frameworks available, Bootstrap.</p>
-								<a href="http://tympanus.net/codrops/?p=22554" class="read-more-btn">Read More <i class="fa fa-chevron-circle-right"></i></a>
-							</div>
+						<div class="col-md-3 feature-1 wp2">
+							<h1>Business Port</h1>
+
+							<h3>Predetermined Layout</h3>
+							<p>One Page Layout</p>
+							<p>Simple Single Page Navigation</p>
+
+							<h3>Contact Form</h3>
+							<p>Simple Form With Multiple Destinations</p>
+
+							<h3>Simple Map</h3>
+							<p>A Link To Google Map</p>
+							
 						</div>
-						<div class="col-md-4 feature-2 wp2 delay-05s">
-							<div class="feature-icon">
-								<i class="fa fa-flash"></i>
-							</div>
-							<div class="feature-content">
-								<h1>Multi-Purpose</h1>
-								<p>Perfect if you run your own start-up, product or service. Boxify can showcase your business converting your visits to income.</p>
-								<a href="http://tympanus.net/codrops/?p=22554" class="read-more-btn">Read More <i class="fa fa-chevron-circle-right"></i></a>
-							</div>
+						<div class="col-md-3 feature-2 wp2 delay-05s">
+							<h1>Business Modern</h1>
+							<h1>$550.00</h1>
+
+							<h3>Unlimited Pages</h3>
+							<p>i.e. about, contact, gallery, etc.</p>
+							<p>You must select a minimum of 3 pages upon purchase.</p>
+							<p>No Worries, you can add more pages later at no cost.</p>
+
+							<h3>One Predetermined Layout</h3>
+							<p>You choose: </p>
+							<p>The Color Scheme</p>
+							<p>The Backgrounds</p>
+							<p>And The Fonts</p>
+
+							<h3>Google Maps</h3>
+							<p>You can choose:</p> 
+							<p>3 colors for the Map Theme</p>
+							<p>And Map Terrain Style</p>
+
 						</div>
-						<div class="col-md-4 feature-3 wp2 delay-1s">
-							<div class="feature-icon">
-								<i class="fa fa-heart"></i>
-							</div>
-							<div class="feature-content">
-								<h1>Absolutely Free</h1>
-								<p>As aways, download Boxify for free exclusively from Codrops. If you love Boxify and want to thank me, simply <a href="http://peterfinlan.com/">buy me a beer</a>. </p>
-								<a href="http://tympanus.net/codrops/?p=22554" class="read-more-btn">Read More <i class="fa fa-chevron-circle-right"></i></a>
-							</div>
+						<div class="col-md-3 feature-3 wp2 delay-1s">
+							<h1>Business Elegant</h1>
+						</div>
+						<div class="col-md-3 feature-3 wp2 delay-1s">
+							<h1>Business Scale</h1>
 						</div>
 
 					</div>
 				</div>
 			</div>
 		</section>
+	</script>
+	<script type="text/ng-template" id="/info.html">
 		<section class="showcase">
 			<div class="showcase-wrap">
 				<div class="texture-overlay"></div>
 				<div class="container">
 					<div class="row">
-						<div class="col-md-6">
-							<div class="device wp3">
-								<div class="device-content">
-									<div class="showcase-slider">
-										<ul class="slides" id="showcaseSlider">
-											<li>
-												<img src="img/screen1.jpg" alt="Device Content Image">
-											</li>
-											<li>
-												<img src="img/screen2.jpg" alt="Device Content Image">
-											</li>
-											<li>
-												<img src="img/screen3.jpg" alt="Device Content Image">
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
 						<div class="col-md-6">
 							<h1>Showcase your Product or Service</h1>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
@@ -183,13 +199,14 @@
 									<a href="http://tympanus.net/codrops/"><img src="img/codrops-logo.png" alt="Codrops Logo"></a>
 								</div>
 							</blockquote>
-							<a href="http://tympanus.net/codrops/?p=22554" class="download-btn">Download! <i class="fa fa-download"></i></a>
+							<a href="#" class="download-btn">Download! <i class="fa fa-download"></i></a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-
+	</script>
+	<script type="text/ng-template" id="/pictures.html">
 		<section class="screenshots-intro">
 			<div class="container">
 				<div class="row">
@@ -317,24 +334,15 @@
 				</div>
 			</div>
 		</section>
-		<section class="download" id="download">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 text-center wp4">
-						<h1>Seen Enough?</h1>
-						<a href="http://tympanus.net/codrops/?p=22554" class="download-btn">Download! <i class="fa fa-download"></i></a>
-					</div>
-				</div>
-			</div>
-		</section>
-		<footer>
+	</script>
+		<!--<footer>
 			<div class="container">
 				<div class="row">
 					<div class="col-md-5">
 						<h1 class="footer-logo">
 						<img src="img/logo-blue.png" alt="Footer Logo Blue">
 						</h1>
-						<p>© Boxify 2015 - <a href="http://tympanus.net/codrops/licensing/">Licence</a> - Designed &amp; Developed by <a href="http://www.peterfinlan.com/">Peter Finlan</a></p>
+						<p>© Luis Constante 2016</p>
 					</div>
 					<div class="col-md-7">
 						<ul class="footer-nav">
@@ -346,20 +354,11 @@
 					</div>
 				</div>
 			</div>
-		</footer>
-		<div class="overlay overlay-boxify">
-			<nav>
-				<ul>
-					<li><a href="#about"><i class="fa fa-heart"></i>About</a></li>
-					<li><a href="#features"><i class="fa fa-flash"></i>Features</a></li>
-				</ul>
-				<ul>
-					<li><a href="#screenshots"><i class="fa fa-desktop"></i>Screenshots</a></li>
-					<li><a href="#download"><i class="fa fa-download"></i>Download</a></li>
-				</ul>
-			</nav>
-		</div>
+		</footer> 
+	-->
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.js"></script>
 		<script src="js/min/toucheffects-min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<script src="js/flickity.pkgd.min.js"></script>
@@ -368,7 +367,8 @@
 		<script src="js/retina.js"></script>
 		<script src="js/waypoints.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
-		<script src="js/min/scripts-min.js"></script>
+		<script src="js/scripts.js"></script>
+		<script src="js/angularMod.js"></script>
 		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 		<script>
 		(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

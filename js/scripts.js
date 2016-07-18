@@ -2,11 +2,6 @@ $(document).ready(function() {
 
 	/***************** Waypoints ******************/
 
-	$('.wp1').waypoint(function() {
-		$('.wp1').addClass('animated fadeInLeft');
-	}, {
-		offset: '75%'
-	});
 	$('.wp2').waypoint(function() {
 		$('.wp2').addClass('animated fadeInDown');
 	}, {
@@ -65,22 +60,22 @@ $(document).ready(function() {
 /***************** Nav Transformicon ******************/
 
 /* When user clicks the Icon */
-$(".nav-toggle").click(function() {
-	$(this).toggleClass("active");
-	$(".overlay-boxify").toggleClass("open");
-});
+// $(".nav-toggle").click(function() {
+// 	$(this).toggleClass("active");
+// 	$(".overlay-boxify").toggleClass("open");
+// });
 
 /* When user clicks a link */
-$(".overlay ul li a").click(function() {
-	$(".nav-toggle").toggleClass("active");
-	$(".overlay-boxify").toggleClass("open");
-});
+// $(".overlay ul li a").click(function() {
+// 	$(".nav-toggle").toggleClass("active");
+// 	$(".overlay-boxify").toggleClass("open");
+// });
 
 /* When user clicks outside */
-$(".overlay").click(function() {
-	$(".nav-toggle").toggleClass("active");
-	$(".overlay-boxify").toggleClass("open");
-});
+// $(".overlay").click(function() {
+// 	$(".nav-toggle").toggleClass("active");
+// 	$(".overlay-boxify").toggleClass("open");
+// });
 
 /***************** Smooth Scrolling ******************/
 

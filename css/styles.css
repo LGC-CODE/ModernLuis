@@ -90,7 +90,7 @@ div h1 a {
     position: absolute;
     width: 100%;
     padding: 2%;
-    z-index: 1;
+    z-index: 2;
 }
 
 #features {
@@ -99,6 +99,11 @@ div h1 a {
     position: relative;
     background: url('http://www.pptbackgrounds.org/uploads/abstract-yellow-with-black-and-some-green-on-the-left-backgrounds-wallpapers.jpg') fixed center center;
     background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: 1024px 768px;
+    background-attachment: fixed;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
 }
 
@@ -606,12 +611,24 @@ Navigation
     height: 26px;
 }
 .navicon p {
-    margin: 1px 50px 0 0
+    margin: 1px 50px 0 -10px;
 }
 .navicon-fixed {
     position: fixed;
     top: 59px;
     right: 143px;
+}
+
+.alertBox {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-color: rgba(143, 130, 39, 0.62);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20% 34%;
+    z-index: 1;
 }
 
 /* ==========================================================================
@@ -621,7 +638,7 @@ Hero
     position: relative;
     padding: 60px 0 60px 0;
     min-height: 800px;
-    background: rgb(40, 70, 102) url('http://download.pchome.net/wallpaper/pic-2294-2.jpg') no-repeat center center;
+    background: rgb(38, 38, 38) url('http://download.pchome.net/wallpaper/pic-2294-2.jpg') no-repeat center center;
     background-size: cover;
     color: #fff;
 }
@@ -772,6 +789,7 @@ Features List
 .features-list p {
     margin-bottom: 0px;
     color: white;
+    margin-left: 10px;
 }
 .feature-content {
     display: inline-block;
@@ -863,8 +881,8 @@ Showcase
     height: 445px;
 }
 .showcase-wrap {
-    position: relative;
-    padding: 100px 0;
+    /* position: relative; */
+    padding: 112px 0;
     min-height: 600px;
 }
 .showcase-slider ul {
@@ -1003,11 +1021,17 @@ Download Now
     font-size: 40px;
 }
 
+footer .small-text p {
+    font-so: ;
+    font-size: 6px;
+}
+
+
 /* ==========================================================================
 Footer
 ========================================================================== */
 footer {
-    padding: 100px 0
+    padding: 10px 0
 }
 footer p {
     color: #c7cacc;
@@ -1024,7 +1048,7 @@ footer li {
     font-weight: 400;
 }
 footer li a {
-    color: #3f6184
+    color: #b7b7b7;
 }
 footer li:last-child {
     margin-right: 0
@@ -1090,8 +1114,8 @@ Nav Overlay
     transition: all 300ms ease-in-out;
 }
 .overlay ul li a:hover, .overlay ul li a:focus {
-    border-color: #73d0da;
-    color: #73d0da;
+    border-color: #ffbd00;
+    color: #ffbd00;
 }
 
 /* Effects */

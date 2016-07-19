@@ -96,11 +96,13 @@ app.controller('navCtrl', ['$scope', function($scope){
 	$scope.navToggle = function(){
 		$(".nav-toggle").toggleClass("active");
 		$(".overlay-boxify").toggleClass("open");
-		console.log('clicked navCtrl');
 	}
 }]);
 
 app.controller('mainCtrl', ['$scope', function($scope){
+	var audio = new Audio('http://incompetech.com/music/royalty-free/mp3-royaltyfree/Suave%20Standpipe.mp3');
+	audio.volume = 0.2;
+
 	$scope.loadPacks = function(){
 		$('.wp2').waypoint(function() {
 			$('.wp2').addClass('animated fadeInDown');
@@ -108,6 +110,15 @@ app.controller('mainCtrl', ['$scope', function($scope){
 			offset: '75%'
 		});
 	}
+
+	$scope.soundStart = function() {
+        audio.play();
+	}
+
+	$scope.hideAlertBox = function(){
+		$('.alertBox').fadeOut(3000);
+	}
+
 }]);
 
 console.log('angular initiated');

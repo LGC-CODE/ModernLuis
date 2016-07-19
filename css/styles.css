@@ -631,6 +631,24 @@ Navigation
     z-index: 1;
 }
 
+.wp2 a {
+    color: black;
+}
+
+.wp2 button {
+    margin-top: 10%;
+    margin-left: 8%;
+}
+
+.info-overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://www.transparenttextures.com/patterns/random-grey-variations.png');
+}
+
 /* ==========================================================================
 Hero
 ========================================================================== */
@@ -638,9 +656,14 @@ Hero
     position: relative;
     padding: 60px 0 60px 0;
     min-height: 800px;
-    background: rgb(38, 38, 38) url('http://download.pchome.net/wallpaper/pic-2294-2.jpg') no-repeat center center;
+    background: rgb(38, 38, 38) url('http://download.pchome.net/wallpaper/pic-2294-2.jpg') fixed no-repeat center center;
     background-size: cover;
     color: #fff;
+    -webkit-background-size: 1024px 768px;
+    background-attachment: fixed;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 .hero h1 {
     margin: 200px 0 0 0;

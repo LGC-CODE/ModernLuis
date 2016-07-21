@@ -1,12 +1,8 @@
 $(document).ready(function() {
 
 	/***************** Waypoints ******************/
-
-	$('.wp2').waypoint(function() {
-		$('.wp2').addClass('animated fadeInDown');
-	}, {
-		offset: '75%'
-	});
+	$('body').css('position','absolute');
+	
 	$('.wp3').waypoint(function() {
 		$('.wp3').addClass('animated bounceInDown');
 	}, {
@@ -20,18 +16,18 @@ $(document).ready(function() {
 
 	/***************** Flickity ******************/
 
-	$('#featuresSlider').flickity({
-		cellAlign: 'left',
-		contain: true,
-		prevNextButtons: false
-	});
+	// $('#featuresSlider').flickity({
+	// 	cellAlign: 'left',
+	// 	contain: true,
+	// 	prevNextButtons: false
+	// });
 
-	$('#showcaseSlider').flickity({
-		cellAlign: 'left',
-		contain: true,
-		prevNextButtons: false,
-		imagesLoaded: true
-	});
+	// $('#showcaseSlider').flickity({
+	// 	cellAlign: 'left',
+	// 	contain: true,
+	// 	prevNextButtons: false,
+	// 	imagesLoaded: true
+	// });
 
 	/***************** Fancybox ******************/
 

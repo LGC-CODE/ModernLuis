@@ -666,7 +666,7 @@ Hero
     position: relative;
     padding: 60px 0 60px 0;
     min-height: 800px;
-    background: rgb(38, 38, 38) url('http://download.pchome.net/wallpaper/pic-2294-2.jpg') fixed no-repeat center center;
+    background: rgb(38, 38, 38) url('../img/white-feather-bob-orsillo.jpg') fixed no-repeat center center;
     background-size: cover;
     color: #fff; 
     -webkit-background-size: 1024px 768px;

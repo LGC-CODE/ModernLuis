@@ -75,7 +75,7 @@
 				<div class="container">
 					<div class="row hero-content">
 						<div class="col-md-6">
-							<h1 class="animated fadeInDown">Luis Constante</h1>
+							<h1 class="animated fadeInDown">Luis German Constante Bautista</h1>
 							<h3>Always Striving For Excellence</h3>
 							<a href="#/packs" class="use-btn animated fadeInUp">View Packs</a> <a href="#/info" class="learn-btn animated fadeInUp">Learn More<i class="fa fa-arrow-down"></i></a>
 							<h4>Bløçkçhåîñ wållé†: 1DD8aTNkhJaBvpSASX6yQYrvGxoEcuEVHU</h4>

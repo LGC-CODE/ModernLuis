@@ -107,7 +107,7 @@ div h1 a {
     width: 100%;
     min-height: 834px;
     position: relative;
-    background: url('img/abstract-yellow-with-black-and-some-green-on-the-left-backgrounds-wallpapers.jpg') fixed center center;
+    background: url('../img/abstract-yellow-with-black-and-some-green-on-the-left-backgrounds-wallpapers.jpg') fixed center center;
     background-repeat: no-repeat;
     background-size: cover;
     -webkit-background-size: 1024px 768px;
@@ -666,7 +666,7 @@ Hero
     position: relative;
     padding: 60px 0 60px 0;
     min-height: 800px;
-    background: rgb(38, 38, 38) url('../img/white-feather-bob-orsillo.jpg') fixed no-repeat center center;
+    background: rgb(38, 38, 38) url('../img/346361.jpg') fixed no-repeat center center;
     background-size: cover;
     color: #fff; 
     -webkit-background-size: 1024px 768px;
@@ -877,7 +877,7 @@ blockquote .logo-quote {
 Showcase
 ========================================================================== */
 .showcase {
-    background: url('img/346361.jpg') no-repeat center center fixed;
+    background: url('../img/346361.jpg') no-repeat center center fixed;
     background-size: cover;
     min-height: 778px;
     /* height: 100%; */

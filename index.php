@@ -117,7 +117,7 @@
 										<li>
 											<h1>Web Page Maintenance</h1>
 											<p>Do you have a WordPress Website or simply need to update information on your website? We Can Help! We can give you the best price for maintaining your website!</p>
-											<p><a href="mailto:design@luisconstante.com?subject=lgc%20message" class="arrow-btn">Email Us!</a></p>
+											<p><a href="mailto:luisconstante@yahoo.com?subject=lgc%20message" class="arrow-btn">Email Us!</a></p>
 										</li>
 									</ul>
 							</div>
@@ -154,7 +154,7 @@
 
 							<h3>Gallery</h3>
 							<p>8 Images of your Choice</p>
-							<a href="mailto:design@luisconstante.com?subject=Business%20Port&body=I%20want%20buy%20the%20Business%20Port%20Package%20Please%20Get%20Back%20To%20Me%20ASAP"><button class="btn">I&rsquo;m Ready!</button></a>
+							<a href="mailto:luisconstante@yahoo.com?subject=Business%20Port&body=I%20want%20buy%20the%20Business%20Port%20Package%20Please%20Get%20Back%20To%20Me%20ASAP"><button class="btn">I&rsquo;m Ready!</button></a>
 							
 						</div>
 						<div class="col-md-3 feature-2 wp2 delay-05s">
@@ -180,7 +180,7 @@
 							<h3>Forms</h3>
 							<p>A Customized Contact Form</p>
 							<p>Request For Customer Info Form</p>
-							<a href="mailto:design@luisconstante.com?subject=Business%20Modern&body=I%20want%20buy%20the%20Business%20Modern%20Package%20Please%20Get%20Back%20To%20Me%20ASAP"><button class="btn">I&rsquo;m Eagerly Ready!</button></a>
+							<a href="mailto:luisconstante@yahoo.com?subject=Business%20Modern&body=I%20want%20buy%20the%20Business%20Modern%20Package%20Please%20Get%20Back%20To%20Me%20ASAP"><button class="btn">I&rsquo;m Eagerly Ready!</button></a>
 
 						</div>
 						<div class="col-md-3 feature-3 wp2 delay-1s">
@@ -200,7 +200,7 @@
 							<p>Predetermined Layout</p>
 							<p>Customized Colors</p>
 							<p>Mini Google Map</p>
-							<a href="mailto:design@luisconstante.com?subject=Business%20Elegant&body=I%20want%20buy%20the%20Business%20Elegant%20Package%20Please%20Get%20Back%20To%20Me%20ASAP"><button class="btn">I&rsquo;m Confidently Ready!!!</button></a>
+							<a href="mailto:luisconstante@yahoo.com?subject=Business%20Elegant&body=I%20want%20buy%20the%20Business%20Elegant%20Package%20Please%20Get%20Back%20To%20Me%20ASAP"><button class="btn">I&rsquo;m Confidently Ready!!!</button></a>
 							
 						</div>
 						<div class="col-md-3 feature-3 wp2 delay-1s">
@@ -219,7 +219,7 @@
 							<p>• Comments</p>
 							<p>• Like Button</p>
 							<p>• Etc.. </p>	
-							<a href="mailto:design@luisconstante.com?subject=Business%20Scale&body=I%20want%20buy%20the%20Business%20Scale%20Package%20Please%20Get%20Back%20To%20Me%20ASAP"><button class="btn">Start My Business!!!</button></a>					
+							<a href="mailto:luisconstante@yahoo.com?subject=Business%20Scale&body=I%20want%20buy%20the%20Business%20Scale%20Package%20Please%20Get%20Back%20To%20Me%20ASAP"><button class="btn">Start My Business!!!</button></a>					
 						</div>
 
 					</div>

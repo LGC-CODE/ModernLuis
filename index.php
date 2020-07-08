@@ -8,7 +8,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Web Development by Luis Constante</title>
+		<title>Luis German Constante Bautista | ...~•¥ Elite €•~...</title>
 		<meta name="description" content="A Personal Portfolio Website" />
 		<meta name="keywords" content="Web Development, web, cheap, affordable, modern, elegant, development, jquery, bootstrap, nodejs, angularjs, javascript, bay area, bay, area, oakland, san leandro, paginas, web, baratas, economicas, dolares, database, base, datos, luis, constante, lgc, code" />
 		<meta name="author" content="Luis Constante" />
